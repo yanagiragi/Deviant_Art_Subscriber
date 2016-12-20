@@ -9,7 +9,7 @@ if __name__ == "__main__":
 	MainContainer = []
 
 	# Store wonderful creators in json/users.json!
-	with open('json/users.json') as json_data:
+	with open('../json/users.json') as json_data:
 		illustids = json.load(json_data)
 		json_data.close()
 
