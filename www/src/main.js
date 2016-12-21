@@ -21,7 +21,7 @@ const app = new Vue({
     return h(this.ViewComponent)
   }, 
   ready : function(){
-    $('.dropdown-button').dropdown('open');
+    
   }
 })
 
