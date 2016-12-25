@@ -3,10 +3,10 @@ Personal Use Subscriber To Catch Up Latest Deviant Art Creator's Newest Content
 
 ### TODO:
 
-Home.vue : md-table-pagination
-About.vue : Fixed layout
-user.vue : not created, suppose to add follow user by administrator
-
-run.sh : update json with crontab
-
-More : Try photo grid or card grid layout
+Home.vue : md-table-pagination<br />
+About.vue : Fixed layout<br />
+user.vue : not created, suppose to add follow user by administrator<br />
+<br />
+run.sh : update json with crontab<br />
+<br />
+More : Try photo grid or card grid layout<br />
