@@ -9,8 +9,8 @@ class utils:
 	def __init__(self, debug):
 		self.debug = debug
 
-	def getSingleUser(self, illustid, container=[]):
-		return self.getPage('http://' + illustid + '.deviantart.com/gallery/?catpath=%2F&offset=',container=container)
+	def getSingleUser(self, illustid):
+		return self.getPage('http://' + illustid + '.deviantart.com/gallery/?catpath=%2F&offset=',container=[])
 
 	# start of getPage -----------------------------------------------------------
 	def getPage(self, url, offset=0, container=[]):

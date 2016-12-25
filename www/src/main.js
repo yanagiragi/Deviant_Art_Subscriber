@@ -1,13 +1,16 @@
 import Vue from 'vue'
 import routes from './routes'
-import Materials from "vue-materials"
+import VueMaterial from 'vue-material'
 
-Vue.use(Materials)
+Vue.use(VueMaterial)
 
 const app = new Vue({
   el: '#app',
   data: {
     currentRoute: window.location.pathname
+  },
+  mounted : function(){
+   
   },
   computed: {
     ViewComponent () {

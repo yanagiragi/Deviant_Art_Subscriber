@@ -92,3 +92,7 @@ ENV/
 *.png
 *.jpg
 *.jpeg
+*.ttf
+*.eot
+*.woff
+*.woff2
