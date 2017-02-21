@@ -96,3 +96,5 @@ ENV/
 *.eot
 *.woff
 *.woff2
+
+node_modules/

@@ -90,8 +90,13 @@
 	  	},
 	  	fetch : function(){
 	  		return new Promise((resolve, reject) => {
-	    		$.ajax('assets/jsons/dump.json').done(function(data){
-	  				resolve(data)	
+	    		$.ajax({
+	    			url : 'assets/jsons/dump.json',
+	    			contentType: "charset=utf-8",
+	    			dataType: 'json'
+	    		}
+	    			).done(function(data){
+	  				resolve(data)
 	  			})
 	    	})
 	  	}, 

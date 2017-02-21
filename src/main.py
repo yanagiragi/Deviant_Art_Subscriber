@@ -19,4 +19,4 @@ if __name__ == "__main__":
 				'containers' : util.getSingleUser(illustid)
 			})
 		
-	print(json.dumps(MainContainer))
+	print(json.dumps(MainContainer,indent = 4 ))

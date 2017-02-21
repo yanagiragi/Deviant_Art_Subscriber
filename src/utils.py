@@ -25,23 +25,28 @@ class utils:
 
 			isend = soup.find('div', attrs={'class' : 'message'})
 			if isend and isend.text == 'This section has no deviations yet!':
-				if self.debug:
-					print('// Done Fetching All Pages for [ ' + url + ' ]');
+				#if self.debug:
+				#	print('// Done Fetching All Pages for [ ' + url + ' ]');
+				print('// Done Fetching All Pages for [ ' + url  + str(offset) + ' ]');
 				return container
 
-			span = soup.findAll('div', attrs={'id' : 'gmi-ResourceStream'})
-			span = soup.findAll('span', attrs={ 'class' : 'shadow' })
-			
+			#span = soup.findAll('div', attrs={'id' : 'gmi-ResourceStream'})
+			span = soup.findAll('span', attrs={'class' : 'thumb'})
+			print(len(span))
+			#for i in range(0, len(span)):
 			for i in range(0, len(span)):
 				try:
 					href = span[i].find('a').attrs['href']
 				except AttributeError:
-					continue
+					#continue
+					href = ''
 				
 				try:
-					title = span[i].find('a').find('img').attrs['alt']
+					#title = span[i].find('a').find('img').attrs['alt']
+					title = span[i].find('span',attrs={'class' : 'title'}).text
 				except KeyError:
-					continue # skip since it may be novels
+					#continue # skip since it may be novels
+					title = ''
 
 				try:
 					thumbnail = span[i].find('a').attrs['data-super-img']
@@ -67,10 +72,12 @@ class utils:
 					'DL' : flag
 				}
 
-				if tmp not in container:
-					container.append(tmp)
-
+				#if tmp not in container:
+				#	container.append(tmp)
+				container.append(tmp)
+				
 			return self.getPage(url, offset + 24, container) # continue fetching next page
+			#return container;
 
 		else:
 			if self.debug:
