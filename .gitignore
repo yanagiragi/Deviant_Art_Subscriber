@@ -89,6 +89,7 @@ ENV/
 .ropeproject
 
 *.json
+!Package.json
 *.png
 *.jpg
 *.jpeg

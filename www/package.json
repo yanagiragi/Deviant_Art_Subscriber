@@ -1,0 +1,33 @@
+{
+  "name": "www",
+  "version": "1.0.0",
+  "description": "> A simple example of routing with Vue 2.0 without using vue-router. This branch uses the raw HTML5 History API. For an example integrating a 3rd-party routing solution, see the [pagejs branch](https://github.com/chrisvfritz/vue-2.0-simple-routing-example/tree/pagejs).",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "vue-material": "^0.7.1",
+    "page": "^1.7.1",
+    "vue": "^2.0.0-beta.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-es2015": "^6.0.0",
+    "cross-env": "^1.0.6",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.8.4",
+    "surge": "^0.18.0",
+    "vue-loader": "^9.0.0",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --inline --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "predeploy": "npm run build",
+    "deploy": "surge --project . --domain vue-2-simple-routing-example.surge.sh"
+  },
+  "keywords": [],
+  "author": "Chris Fritz <chrisvfritz@gmail.com>",
+  "license": "ISC"
+}
