@@ -1,4 +1,4 @@
-# Deviant_Art_Subscriber
+# Deviant_Art_Subscriber(Deprecated)
 Personal Use Subscriber To Catch Up Latest Deviant Art Creator's Newest Content
 
 ### TODO:
